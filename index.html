@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jyotiva — Pure Cotton Wicks, Handcrafted with Devotion</title>
+<meta name="description" content="Thoughtfully handcrafted long cotton wicks, made with pure cotton for everyday pooja and sacred celebrations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#faf7f2;--sand:#f2ece0;--brown:#5a3e31;--dark:#2e211b;--gold:#8f7550;--text:#2b1f19;--muted:#6f625a;--line:#e6dccd;--tan:#e8d3a9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:'Playfair Display',serif;font-weight:400}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:22px}
+.eyebrow:before{content:"";width:30px;height:1px;background:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:18px 26px;cursor:pointer;border:1px solid transparent;transition:.25s}
+.btn-dark{background:var(--brown);color:#fff}.btn-dark:hover{background:var(--dark)}
+.btn-line{border-color:var(--gold);color:var(--brown);background:transparent;width:100%}.btn-line:hover{background:var(--brown);color:#fff}
+.btn-tan{background:var(--tan);color:var(--dark)}.btn-tan:hover{background:#f1dfb8}
+.arrow{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6}
+
+/* announcement + header */
+.top{background:var(--brown);color:#efe3d3;font-size:10px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:9px 10px}
+header{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1120px;margin:0 auto}
+.logo b{display:block;font-family:'Playfair Display',serif;font-weight:400;font-size:24px;letter-spacing:.2em}
+.logo small{display:block;font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.burger{background:none;border:0;width:36px;height:36px;cursor:pointer;display:grid;place-items:center}
+.burger svg{width:22px;height:22px;stroke:var(--text);stroke-width:1.5;fill:none}
+.menu{display:none;padding:10px 22px 22px;background:var(--cream)}
+.menu.open{display:block}
+.menu a.l{display:block;padding:15px 0;border-bottom:1px solid var(--line);font-size:13px;letter-spacing:.06em}
+.menu .btn{margin-top:18px;width:100%;padding:14px;background:transparent;border-color:var(--gold);color:var(--brown);font-size:10px}
+.nav{display:none}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--sand),var(--cream));padding:56px 0 52px}
+.hero h1{font-size:clamp(46px,12vw,84px);line-height:1.04;letter-spacing:-.02em;margin-bottom:26px}
+.hero h1 em{color:var(--gold)}
+.hero p{color:var(--muted);font-size:15.5px;max-width:460px;margin-bottom:34px}
+.story{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:14px;color:var(--muted)}
+.photo{position:relative;height:340px;background:linear-gradient(135deg,#d9bf94,#b58d58 60%,#7b5733);background-size:cover;background-position:center}
+.photo span{position:absolute;right:16px;bottom:16px;color:#fff;font-family:'Playfair Display',serif;font-style:italic;font-size:15px;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.strip{display:flex;gap:26px;overflow-x:auto;padding:16px 22px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap;scrollbar-width:none}
+.strip span{display:flex;align-items:center;gap:9px}
+.strip svg{width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:1.5}
+
+/* collection */
+section{padding:72px 0}
+.sec-h{font-size:clamp(38px,9vw,56px);line-height:1.1;letter-spacing:-.02em;margin-bottom:18px}
+.sec-p{color:var(--muted);font-size:14.5px;max-width:420px;margin-bottom:38px}
+.grid{display:grid;gap:26px}
+.card{background:#fffcf8;border:1px solid var(--line)}
+.card .img{position:relative;aspect-ratio:1.18/1;overflow:hidden}
+.card .img img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;top:14px;left:14px;background:var(--gold);color:#fff;font-size:10px;font-weight:600;letter-spacing:.1em;padding:7px 11px;text-transform:uppercase}
+.card .body{padding:22px 20px 22px}
+.tag{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.card h3{font-size:27px;line-height:1.2;margin-bottom:10px}
+.meta{font-size:12.5px;color:var(--muted);margin-bottom:18px}
+.meta i{margin:0 8px;font-style:normal}
+.desc{font-size:13.5px;color:var(--muted);min-height:52px}
+.price{display:flex;align-items:baseline;gap:14px;margin:34px 0 20px}
+.price b{font-family:'Playfair Display',serif;font-weight:400;font-size:34px}
+.price s{color:var(--muted);font-size:15px}
+.note{text-align:center;font-size:12px;color:var(--muted);margin-top:26px;max-width:420px;margin-left:auto;margin-right:auto}
+
+/* promise */
+.promise{padding-top:20px}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:34px}
+.pgrid div{padding:26px 18px 30px 0;border-bottom:1px solid var(--line)}
+.pgrid div:nth-child(odd){border-right:1px solid var(--line);padding-right:18px}
+.pgrid div:nth-child(even){padding-left:18px}
+.pgrid svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.4;margin-bottom:20px}
+.pgrid h3{font-size:21px;line-height:1.25;margin-bottom:10px}
+.pgrid p{font-size:13px;color:var(--muted)}
+
+/* cta + footer */
+.cta{background:var(--brown);color:#fff;padding:60px 0 64px}
+.cta .eyebrow{color:var(--tan)}.cta .eyebrow:before{background:var(--tan)}
+.cta h2{font-size:clamp(30px,7vw,44px);line-height:1.2;margin-bottom:16px}
+.cta p{color:#e9dccc;font-size:14.5px;margin-bottom:32px}
+footer{background:var(--dark);color:#d8cabb;padding:48px 0 34px}
+footer .logo b{color:#fff;font-size:28px}
+footer .logo small{color:var(--tan);margin-bottom:26px}
+footer p{font-size:13.5px;color:#cbbcab}
+.fcols{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:34px}
+.fcols h4{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:16px}
+.fcols a,.fcols span{display:block;font-size:13.5px;margin-bottom:12px;color:#fff}
+.fcols small{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#d8cabb;margin-bottom:4px}
+.fcols .dim{color:#bdae9d}
+.copy{border-top:1px solid #4a3a31;margin-top:34px;padding-top:22px;font-size:11.5px;color:#9d8e7e}
+.top-btn{position:fixed;right:50%;bottom:18px;transform:translateX(50%);width:46px;height:46px;border-radius:50%;background:#fff;border:0;box-shadow:0 4px 18px rgba(0,0,0,.2);cursor:pointer;display:grid;place-items:center;opacity:0;pointer-events:none;transition:.3s;z-index:60}
+.top-btn.show{opacity:1;pointer-events:auto}
+.top-btn svg{width:22px;height:22px;stroke:var(--dark);fill:none;stroke-width:1.8}
+
+@media(min-width:820px){
+ .burger{display:none}.menu{display:none!important}
+ .nav{display:flex;align-items:center;gap:34px;font-size:13px;letter-spacing:.06em}
+ .nav a:hover{color:var(--gold)}
+ .nav .btn{padding:12px 20px;font-size:10.5px}
+ .hero{padding:96px 0}
+ .hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;align-items:center}
+ .photo{height:520px}
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .pgrid{grid-template-columns:repeat(4,1fr)}
+ .pgrid div,.pgrid div:nth-child(odd),.pgrid div:nth-child(even){border-right:1px solid var(--line);padding:30px 22px}
+ .pgrid div:last-child{border-right:0}
+ .cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:40px}
+ .fcols{grid-template-columns:repeat(3,auto);justify-content:start;gap:80px}
+ .top-btn{right:28px;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="top">Pure Cotton · Handmade with Devotion · Made for Everyday Pooja</div>
+
+<header id="home">
+ <div class="bar">
+  <a href="#home" class="logo"><b>JYOTIVA</b><small>Pure Cotton. Handcrafted with Devotion.</small></a>
+  <nav class="nav">
+   <a href="#home">Home</a><a href="#products">Our Products</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+   <a class="btn btn-dark" href="#products">Shop the Collection</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu">
+   <svg id="ic-open" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+   <svg id="ic-close" viewBox="0 0 24 24" style="display:none"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  </button>
+ </div>
+ <div class="menu" id="menu">
+  <a class="l" href="#home">Home</a><a class="l" href="#products">Our Products</a><a class="l" href="#about">About Us</a><a class="l" href="#contact">Contact</a>
+  <a class="btn" href="#products">Shop the Collection</a>
+ </div>
+</header>
+
+<div class="hero">
+ <div class="wrap">
+  <div>
+   <div class="eyebrow">A little light, every day</div>
+   <h1>Bring Home the <em>Light</em> of Devotion.</h1>
+   <p>Thoughtfully handcrafted long cotton wicks, made with pure cotton and care for your everyday pooja and sacred celebrations.</p>
+   <a class="btn btn-dark" href="#products">Explore Our Collection
+    <svg class="arrow" viewBox="0 0 24 24"><path d="M12 4v16M5 13l7 7 7-7"/></svg></a>
+   <a class="story" href="#about">Discover our story
+    <svg class="arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a>
+  </div>
+ </div>
+</div>
+<div class="img"><img src="hero.png" alt="Jyotiva Classic Cotton Wicks"><span class="badge">42% off</span></div>
+
+<div class="photo" style="background-image:url(Hero.jpg')"><span>A moment of stillness, made by hand.</span></div>
+
+<div class="strip">
+ <span><svg viewBox="0 0 24 24"><path d="M7 14c3-1 5-3 7-7l3 3c-4 2-6 4-7 7l-3-3z"/><path d="M4 20l3-3"/></svg>Made by hand</span>
+ <span><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>Pure cotton</span>
+ <span><svg viewBox="0 0 24 24"><path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-6 1-9z"/></svg>Long-wick design</span>
+ <span><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M9 12l2 2 4-4"/></svg>Options for every household</span>
+</div>
+
+<section id="products">
+ <div class="wrap">
+  <div class="eyebrow">The Jyotiva Collection</div>
+  <h2 class="sec-h">Made for your moments of light.</h2>
+  <p class="sec-p">Choose the pack that feels right for your daily rituals, family pooja, and celebrations.</p>
+
+  <div class="grid">
+   <article class="card">
+    <div class="img"><img src="Classic.png" alt="Jyotiva Classic Cotton Wicks"><span class="badge">42% off</span></div>
+    <div class="body">
+     <div class="tag">Handcrafted Cotton Wicks</div>
+     <h3>Jyotiva Classic Cotton Wicks</h3>
+     <div class="meta">250 long cotton wicks<i>·</i>Flat packet</div>
+     <p class="desc">Pure cotton, handmade long wicks for everyday worship and traditional rituals.</p>
+     <div class="price"><b>₹70</b><s>₹120</s></div>
+     <a class="btn btn-line wa" data-msg="Hello Jyotiva! I would like to order the Classic Cotton Wicks — 250 pieces for ₹70. Please share the ordering and delivery details." href="#">Buy now on WhatsApp
+      <svg class="arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a>
+    </div>
+   </article>
+
+   <article class="card">
+    <div class="img"><img src="jar.png" alt="Jyotiva Premium Jar Edition"></div>
+    <div class="body">
+     <div class="tag">Handcrafted Cotton Wicks</div>
+     <h3>Jyotiva Premium Jar Edition</h3>
+     <div class="meta">250 long cotton wicks<i>·</i>Premium transparent jar</div>
+     <p class="desc">Finely handcrafted long cotton wicks presented in an elegant, reusable-style storage jar.</p>
+     <div class="price"><b>₹85</b></div>
+     <a class="btn btn-line wa" data-msg="Hello Jyotiva! I would like to order the Premium Jar Edition — 250 pieces for ₹85. Please share the ordering and delivery details." href="#">Buy now on WhatsApp
+      <svg class="arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a>
+    </div>
+   </article>
+
+   <article class="card">
+    <div class="img"><img src="family.png" alt="Jyotiva Family Pack"></div>
+    <div class="body">
+     <div class="tag">Handcrafted Cotton Wicks</div>
+     <h3>Jyotiva Family Pack</h3>
+     <div class="meta">1,000 long cotton wicks<i>·</i>Large flat packet</div>
+     <p class="desc">A generous family-size pack of handmade long cotton wicks for frequent pooja, festivals, and special occasions.</p>
+     <div class="price"><b>₹230</b></div>
+     <a class="btn btn-line wa" data-msg="Hello Jyotiva! I would like to order the Family Pack — 1,000 pieces for ₹230. Please share the ordering and delivery details." href="#">Buy now on WhatsApp
+      <svg class="arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a>
+    </div>
+   </article>
+  </div>
+  <p class="note">Ordering begins with a WhatsApp message. Delivery details will be shared in conversation.</p>
+ </div>
+</section>
+
+<section class="promise" id="about">
+ <div class="wrap">
+  <div class="eyebrow">The Jyotiva Promise</div>
+  <h2 class="sec-h">A thoughtful choice for every ritual.</h2>
+  <div class="pgrid">
+   <div><svg viewBox="0 0 24 24"><path d="M7 14c3-1 5-3 7-7l3 3c-4 2-6 4-7 7l-3-3z"/><path d="M4 20l3-3"/></svg><h3>Handmade with Care</h3><p>Each wick is thoughtfully handcrafted for the rituals you hold close.</p></div>
+   <div><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg><h3>Pure Cotton</h3><p>Made with pure cotton for a simple, considered pooja essential.</p></div>
+   <div><svg viewBox="0 0 24 24"><path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-6 1-9z"/></svg><h3>Made for Daily Pooja</h3><p>Long-wick designs for everyday worship and special occasions alike.</p></div>
+   <div><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M9 12l2 2 4-4"/></svg><h3>Options for Every Household</h3><p>Choose a classic packet, a jar edition, or a generous family pack.</p></div>
+  </div>
+ </div>
+</section>
+
+<div class="cta" id="contact">
+ <div class="wrap">
+  <div>
+   <div class="eyebrow">A conversation, to begin</div>
+   <h2>Let’s find your Jyotiva pack.</h2>
+   <p>Send us a message to ask about a product or begin an order.</p>
+  </div>
+  <div><a class="btn btn-tan wa" data-msg="Hello Jyotiva! I would like to know more about your cotton wicks." href="#">Contact on WhatsApp
+   <svg class="arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></div>
+ </div>
+</div>
+
+<footer>
+ <div class="wrap">
+  <div class="logo"><b>JYOTIVA</b><small>Pure Cotton. Handcrafted with Devotion.</small></div>
+  <p>Pure Cotton. Handcrafted with Devotion.<br>Long cotton wicks for everyday pooja and sacred celebrations.</p>
+  <div class="fcols">
+   <div><h4>Explore</h4><a href="#home">Home</a><a href="#products">Our Products</a><a href="#about">About Us</a></div>
+   <div><h4>Stay in Touch</h4>
+    <small>WhatsApp</small><a class="wa" data-msg="Hello Jyotiva!" href="#">Message Jyotiva</a>
+    <small>Email</small><a href="mailto:contact.jyotiva@gmail.com">contact.jyotiva@gmail.com</a>
+   </div>
+  </div>
+  <div class="copy">© <span id="yr"></span> Jyotiva. All rights reserved.</div>
+ </div>
+</footer>
+
+<button class="top-btn" id="top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M5 11l7-7 7 7M5 19l7-7 7 7"/></svg></button>
+
+<script>
+const PHONE="919495521443";
+document.querySelectorAll('.wa').forEach(a=>{
+ a.addEventListener('click',e=>{
+  e.preventDefault();
+  const m=a.dataset.msg||"Hello Jyotiva!";
+  window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(m),"_blank","noopener");
+ });
+});
+const menu=document.getElementById('menu'),io=document.getElementById('ic-open'),ic=document.getElementById('ic-close');
+function setMenu(o){menu.classList.toggle('open',o);io.style.display=o?'none':'';ic.style.display=o?'':'none'}
+document.getElementById('burger').onclick=()=>setMenu(!menu.classList.contains('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+const t=document.getElementById('top');
+addEventListener('scroll',()=>t.classList.toggle('show',scrollY>500));
+t.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
